@@ -1,5 +1,5 @@
 // JSF1 Coding Challenge #1
-
+//https://sites.google.com/site/tyroneunblockedgame/drift-hunters
 // mass in kg, height in meters
 
 //Marks weights 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 m tall.
@@ -24,10 +24,15 @@ console.log("johns_height", johns_height)
 console.log("Is John's bmi greater then marks?", johns_BMI > marks_BMI)
 
 // Coding Challenge #2
-if (marks_BMI > johns_BMI) {
-    console.log(`Mark's BMI ${marks_BMI} is higher than John's ${johns_BMI}!`)
+function precise(x) {
+    return x.toPrecision(4);
 }
 
+if (marks_BMI > johns_BMI) {
+    console.log(`Mark's BMI ${precise(marks_BMI)} is higher than John's ${precise(johns_BMI)}!`)
+}
+
+
 else {
-    console.log(`John's ${johns_BMI} is higher than Mark's BMI ${marks_BMI} !`)
+    console.log(`John's ${precise(johns_BMI)} is higher than Mark's BMI ${precise(marks_BMI)} !`)
 }
