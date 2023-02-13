@@ -56,13 +56,7 @@ let dolphins_round1 = prompt("Dolphins score round 1");
 let dolphins_round2 = prompt("Dolphins score round 2");
 let dolphins_round3 = prompt("Dolphins score round 3");
 
-console.log(dolphins_round1)
-
 dolphins_average = (Number(dolphins_round1) + Number(dolphins_round2) + Number(dolphins_round3))/3
-alert(`Dolphins average ${Number.parseInt(dolphins_average)}`);
-
-console.log(dolphins_average)
-console.log(Number(dolphins_round1) + Number(dolphins_round2) + Number(dolphins_round3))
 
 // dolphins score calc
 
@@ -72,13 +66,7 @@ let koalas_round1 = prompt("Koalas score round 1");
 let koalas_round2 = prompt("Koalas score round 2");
 let koalas_round3 = prompt("Koalas score round 3");
 
-console.log(koalas_round1)
-
 koalas_average = (Number(koalas_round1) + Number(koalas_round2) + Number(koalas_round3))/3
-alert(`Koalas average ${Number.parseInt(koalas_average)}`);
-
-console.log(koalas_average)
-console.log(Number(koalas_round1) + Number(koalas_round2) + Number(koalas_round3))
 
 if (koalas_average > dolphins_average) {
     alert(`koalas average of ${koalas_average} is greater then the dolphins average of ${dolphins_average}`)
