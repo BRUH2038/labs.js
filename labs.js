@@ -42,7 +42,6 @@ else {
     console.log(`John's ${precise(johns_BMI)} is higher than Mark's BMI ${precise(marks_BMI)} !`)
 }
 
-*/
 
 /////////////////////////////////
 // Coding Challenge #3///////////
@@ -75,3 +74,63 @@ if (koalas_average > dolphins_average) {
 else {
     alert(`koalas average of ${koalas_average} is greater then the dolphins average of ${dolphins_average}`)
 }
+*/
+
+//////////////////////////////
+// JSF2 Coding Challenge #1 //
+//////////////////////////////
+
+let calcAverage = (_dolphinsScore1,_dolphinsScore2,_dolphinsScore3)
+
+/* messed up (¬_¬")
+function calcAverage(dolphinsScore,kosalasScore){
+    let currentTeam;
+    let currentTeamTotal;
+   
+    for(let team = 1;team < 2 ; team++){
+        if (team == 1){
+            currentTeam = dolphinsScore            
+        }
+
+        else{
+            currentTeam = kosalasScore
+        }
+
+        for(let i = 0;i < currentTeam.length ; i++){
+            currentTeamTotal += currentTeam[i]
+            if (team == 1 && i == (currentTeam.length -1)){
+                let avgDolhins = currentTeamTotal / 3
+                console.log(avgDolhins)
+                return avgDolhins
+            }
+
+            else if (team == 2 && i == (currentTeam.length -1)){
+                let avgKoalas = currentTeamTotal / 3
+                return avgKoalas
+            }
+        }
+        
+    }
+    checkWinner(avgDolhins, avgKoalas)
+}
+
+function checkWinner(avgDolhins, avgKoalas){
+    if(avgDolhins >= (avgKoalas*2)| avgKoalas >= (avgDolhins*2)){
+        if (avgDolhins >= (avgKoalas*2)){
+            console.log(`Dolhins win (${avgDolhins} vs. ${avgKoalas})`);
+        }
+
+        else{
+            console.log(`Koalas win (${avgKoalas} vs. ${avgDolhins})`);
+        }
+    }
+
+    else{
+        console.log("No winer");
+    }
+
+}
+
+calcAverage([44,23,71], [65,54,49])
+*/
+ddddd
