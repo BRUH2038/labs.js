@@ -79,10 +79,9 @@ else {
 //////////////////////////////
 // JSF2 Coding Challenge #1 //
 //////////////////////////////
-
+/* messed up (¬_¬")
 let calcAverage = (_dolphinsScore1,_dolphinsScore2,_dolphinsScore3)
 
-/* messed up (¬_¬")
 function calcAverage(dolphinsScore,kosalasScore){
     let currentTeam;
     let currentTeamTotal;
@@ -133,4 +132,36 @@ function checkWinner(avgDolhins, avgKoalas){
 
 calcAverage([44,23,71], [65,54,49])
 */
-ddddd
+
+//////////////////////////////
+// JSF2 Coding Challenge #3 //
+//////////////////////////////
+
+const john = {fullName: "John Smith",
+ mass: 92,
+ height: 1.95,
+}
+
+const mark = {fullName: "Mark Miller",
+ mass: 78,
+ height: 1.69,
+}
+
+function calcBMI(mass, height){
+    BMI = mass / height ** 2;
+    return BMI;
+}
+
+const johnBMI = calcBMI(john.mass, john.height);
+const markBMI = calcBMI(mark.mass, mark.height);
+
+console.log(johnBMI)
+console.log(markBMI)
+
+if (markBMI > johnBMI) {
+    console.log(`Mark's BMI ${markBMI.toPrecision(4)}% is higher than John's ${johnBMI.toPrecision(4)}%!`)
+}
+
+else {
+    console.log(`John's ${johnBMI.toPrecision(4)}% is higher than Mark's BMI ${johnBMI.toPrecision(4)}%!`)
+}
