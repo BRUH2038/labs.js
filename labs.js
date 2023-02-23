@@ -132,7 +132,7 @@ function checkWinner(avgDolhins, avgKoalas){
 
 calcAverage([44,23,71], [65,54,49])
 */
-
+/* 
 //////////////////////////////
 // JSF2 Coding Challenge #3 //
 //////////////////////////////
@@ -165,3 +165,84 @@ if (markBMI > johnBMI) {
 else {
     console.log(`John's ${johnBMI.toPrecision(4)}% is higher than Mark's BMI ${johnBMI.toPrecision(4)}%!`)
 }
+
+//////////////////////////////////////////////////////////////
+/// JSF2 Coding Challenge #4                           //////
+////////////////////////////////////////////////////////////
+
+let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+let tips = [];
+let totals = [];
+
+*///////////////////////////////////////////////////////////////////////////
+/// Data Structures, Modern Operators and Strings Coding Challenge #1//////
+//////////////////////////////////////////////////////////////////////////
+
+const game = {
+
+    team1: 'Bayern Munich',
+    team2: 'Borrussia Dortmund',
+
+    players: [
+    [
+        'Neuer',
+        'Pavard',
+        'Martinez',
+        'Alaba',
+        'Davies',
+        'Kimmich',
+        'Goretzka',
+        'Coman',
+        'Muller',
+        'Gnarby',
+        'Lewandowski',
+    ],
+
+    [
+        'Burki',
+        'Schulz',
+        'Hummels',
+        'Akanji',
+        'Hakimi',
+        'Weigl',
+        'Witsel',
+        'Hazard',
+        'Brandt',
+        'Sancho',
+        'Gotze',
+
+    ],
+],
+score: '4:0',
+scored: ['Lewandowski','Gnarby','Lewandowski','Hummels'],
+date: 'Nov 9th, 2037',
+odds: {
+    team1: 1.33,
+    x: 3.25,
+    team1: 6.5,
+},
+};
+
+let players1 = []
+let players2 = []
+
+for(let i = 0; i < game["players"].length; i++){
+    console.log(i)
+
+    for (let x = 0; x < game["players"][i].length; x++){
+        console.log(x)
+        console.log(game["players"][i][x])
+        /*if (i = 0){
+            players1.push(game["players"][i][x])
+        }
+
+        else{
+            players2.push(game["players"][i][x])
+        }*/
+    }
+}
+
+console.log(players1)
+console.log(players2)
+console.log("players2")
