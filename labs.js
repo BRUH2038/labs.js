@@ -179,6 +179,10 @@ let totals = [];
 /// Data Structures, Modern Operators and Strings Coding Challenge #1//////
 //////////////////////////////////////////////////////////////////////////
 
+let players1 = [];
+let players2 = [];
+let allPlayers = [];
+
 const game = {
 
     team1: 'Bayern Munich',
@@ -211,38 +215,59 @@ const game = {
         'Brandt',
         'Sancho',
         'Gotze',
-
     ],
 ],
 score: '4:0',
 scored: ['Lewandowski','Gnarby','Lewandowski','Hummels'],
 date: 'Nov 9th, 2037',
 odds: {
-    team1: 1.33,
-    x: 3.25,
-    team1: 6.5,
+    team1: 1.33, //12%
+    x: 3.25, //29.33%
+    team2: 6.5, //58.66%
 },
 };
 
-let players1 = []
-let players2 = []
-
 for(let i = 0; i < game["players"].length; i++){
-    console.log(i)
 
     for (let x = 0; x < game["players"][i].length; x++){
-        console.log(x)
-        console.log(game["players"][i][x])
-        /*if (i = 0){
+        if (i == 0){
             players1.push(game["players"][i][x])
         }
-
-        else{
+        else if (i == 1){
             players2.push(game["players"][i][x])
-        }*/
+        }
+        console.log(i)
+        console.log(x)
+        console.log(game["players"][i][x])
+        allPlayers.push(game["players"][i][x])
     }
 }
 
-console.log(players1)
-console.log(players2)
-console.log("players2")
+let players1Final = players1;
+let players2Final = players2;
+
+let gk1 = game["players"][0][0];
+let gk2 = game["players"][1][0];
+
+players1Final.push('Thiago', 'Coutinho', 'Perisic')
+players2Final.push()
+console.log(players1Final)
+console.log(players2Final)
+
+let randomWin = Math.floor(Math.random() * 100) + 1;
+console.log(randomWin)
+
+function printGoals(players){
+    if (randomWin == 12){
+        let teamWon = 'team1 won!';  
+    }
+
+    else if(randomWin == 30){
+        let teamWon = 'draw';  
+    }
+
+    else{
+        let teamWon = 'team2 won!';  
+    }
+};
+printGoals
